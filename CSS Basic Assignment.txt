@@ -1,0 +1,89 @@
+
+CSS Basics Assignment
+
+Part 1: CSS Basics - Selectors, Properties, and Values
+HTML File
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking external CSS -->
+    <style>
+        /* Internal CSS */
+        h1 {
+            font-size: 28px; /* Element Selector */
+        }
+        .highlight {
+            background-color: lightyellow; /* Class Selector */
+        }
+        #uniqueSection {
+            border: 2px solid black; /* ID Selector */
+        }
+    </style>
+</head>
+<body style="background-color: #f0f8ff;"> <!-- Inline CSS -->
+    <h1>Welcome to CSS Basics</h1>
+    <div id="uniqueSection" class="highlight">
+        <p>This is a unique section styled with an ID selector and a class selector.</p>
+    </div>
+    <p class="highlight">This is a paragraph styled with a class selector.</p>
+    <p>This paragraph is not styled with a class or ID.</p>
+</body>
+</html>
+
+
+Part 2: Inline, Internal, and External CSS
+External CSS File (styles.css)
+
+/* External CSS */
+body {
+    background-color: #e6f7ff; /* Change the background color */
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3; /* Hover effect for links */
+    text-decoration: underline;
+}
+
+
+Part 3: Basic Styling Properties
+Updated HTML File for Card Component
+
+<div class="card">
+    <h2>Card Title</h2>
+    <p>This is a description inside the card component. It is styled with padding, margin, and a border.</p>
+</div>
+
+Updated Internal CSS for Card Component
+
+.card {
+    background-color: #ffffff; /* Light background color */
+    border: 1px solid #dcdcdc; /* Subtle border */
+    padding: 20px; /* Padding inside the card */
+    margin: 20px auto; /* Margin around the card */
+    width: 300px; /* Fixed width for the card */
+    font-family: Arial, sans-serif; /* Font family */
+    text-align: left; /* Left-align text */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+.card h2 {
+    font-size: 24px; /* Font size for the card title */
+    font-weight: bold; /* Bold font weight */
+    color: #333333; /* Text color */
+}
+
+.card p {
+    font-size: 16px; /* Font size for the description */
+    color: #555555; /* Subtle text color */
+    line-height: 1.5; /* Line spacing */
+}
+
